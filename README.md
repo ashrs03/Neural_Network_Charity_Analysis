@@ -11,12 +11,15 @@ Number of inputs are to be determined, and also neurons and layers in the model.
 
 Data Preprocessing
 What variable(s) are considered the target(s) for your model?
+
 IS_SUCCESSFUL column is the target for the model
 
 What variable(s) are considered to be the features for your model?
+
 The remaining columns are the features for the model.
 
 What variable(s) are neither targets nor features, and should be removed from the input data?
+
 'EIN' and 'NAME' are not beneficial and are neither targets nor features and were removed from input data. 
 
 Unique values in each column after the specified columns are removed ( Is_Successful of these columns is the target and rest are features)
@@ -26,16 +29,19 @@ Unique values in each column after the specified columns are removed ( Is_Succes
 Compiling, Training, and Evaluating the Model
 
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
+
 Below shows the selection of neurons, layers and activation function. The relu and sigmoid activation seemed to fit better for layer 3 and layer 4
 
 ![image](https://user-images.githubusercontent.com/42523379/216239070-986dc365-757a-4abe-b8f1-e84408aa147f.png)
 
 Were you able to achieve the target model performance?
+
 The model was able to gain accuracy of 72.6% and fell short of the target of 75%
 
 ![image](https://user-images.githubusercontent.com/42523379/216238600-4653e637-48ac-4d75-9e56-991eb75e7768.png)
 
 What steps did you take to try and increase model performance?
+
 Columns were reviewed and the STATUS and SPECIAL_CONSIDERATIONS columns were dropped as well as increasing the number of neurons and layers. 
 Relu activiation in first couple layers and sigmoid in last fetched better results. 
 
